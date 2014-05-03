@@ -17,7 +17,7 @@ public class IntegerTest {
     }
 
     public void isObj(Integer x) {
-        if (x.getClass().equals(Integer.TYPE)) {
+        if (x.getClass().equals(Integer.class)) {
             System.out.println("Obj");
         } else {
             System.out.println("Prim");
@@ -26,7 +26,7 @@ public class IntegerTest {
 
     public void isPrim(int x) {
         Integer i = x;
-        if (i.getClass().equals(Integer.TYPE)) {
+        if (i.getClass().equals(Integer.class)) {
             System.out.println("Obj");
         } else {
             System.out.println("Prim");
@@ -35,5 +35,9 @@ public class IntegerTest {
 
     public static void main(String[] args) {
         new IntegerTest().run();
+
+//        Integer a = null;
+//        int x = a; // autounbox
+//        System.out.println(x);
     }
 }
