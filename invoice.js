@@ -1,5 +1,7 @@
-{
-  "_id": "a9f88ba1a38ec88771cb5974db000443",
+var fs = require('fs')
+
+invoice = {
+  "_id": "a9f88ba1a38ec88771cb5974db0012a3",
   "object_name": "string_value",
   "object_name": 1,
   "array_name": [
@@ -21,4 +23,6 @@
       "amount"          : 32.15
     }
   ]
-} 
+}
+
+fs.writeFileSync('./testout.json', invoice);

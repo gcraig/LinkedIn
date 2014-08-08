@@ -1,5 +1,5 @@
-{
-  "_id": "a9f88ba1a38ec88771cb5974db000443",
+invoice = {
+  "_id": "a9f88ba1a38ec88771cb5974db0012a3",
   "object_name": "string_value",
   "object_name": 1,
   "array_name": [
@@ -8,7 +8,7 @@
       3,
       4
   ],
-  "invoice_number": 1000,
+  "invoice_number": $invoice_number$,
   "is_exempt": true,
   "transactions"    : 
   [
@@ -21,4 +21,4 @@
       "amount"          : 32.15
     }
   ]
-} 
+}
